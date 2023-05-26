@@ -1,6 +1,7 @@
+require('dotenv').config();
 const App = require('./server');
 
 const app = new App();
-const port = 3000;
+const port = process.env.PORT;
 
 app.start(port);
